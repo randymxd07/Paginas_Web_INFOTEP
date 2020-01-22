@@ -1,0 +1,41 @@
+.titulo{
+    color: white;
+    padding: 0% 400px;
+    font-style: italic;
+}
+h2{
+    padding: 0% 370px;
+}
+img{
+    padding: 0px 500px;
+}
+body{
+    max-width: 100000px;
+}
+p{
+    font-size: larger;
+}
+h1{
+    font-style: italic;
+}
+.negro{
+    background: black;
+    color: white;
+}
+body ol{
+    color: white;
+    font-style: italic;
+}
+.aumento{
+    font-size: 30px;
+}
+.imgnormal{
+    padding: 0% 0%;
+}
+body nav a{
+    color: white;
+    margin: 0px 24px;
+}
+.blanco a{
+    color: black;
+}

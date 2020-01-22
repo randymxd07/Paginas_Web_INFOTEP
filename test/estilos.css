@@ -1,0 +1,31 @@
+body{
+    background: black;
+    color: white;
+}
+h1{
+    color: red;
+}
+nav ul a{
+    font-size: 30px;
+    color: white;
+}
+em{
+    font-size: 15px;
+}
+.indice{
+    padding: 0px 3.1%;
+    font-size: 50px;
+    color: white;
+    height: 30px;
+}
+.menu div{
+    padding: 0px 43px;
+    display: inline-block;
+    border-style: dotted;
+    border-color: white;
+}
+.menuprincipal{
+    font-size: 50px;
+    color: white;
+    padding: 0px 43%;
+}
