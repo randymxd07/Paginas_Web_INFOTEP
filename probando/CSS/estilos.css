@@ -1,0 +1,38 @@
+body{
+    background: url(../Imagenes/IuTpMuq.gif);   
+}
+.borde div{
+    background-color: rgba(128, 128, 128, 0.548);
+    padding: 25px 25px;
+    font-size: 16px;
+    color: white;
+    background-attachment: scroll;
+}
+.borde .gray{ 
+    color: gainsboro;
+}
+.borde .gray:hover{
+    color: rgb(44, 218, 0);
+}
+.tama{
+    font-size: 25px;
+}
+.borde div a{
+    color: white;
+}
+div a:hover{
+    color: rgb(44, 218, 0);
+}
+.borde .nocolor{
+    color: white;
+}
+.titulo{
+    font-size: 100px;
+    color: white;
+}
+h5{
+    color: white;
+}
+.abajo{
+    padding: 100px;
+}
