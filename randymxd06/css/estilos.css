@@ -1,0 +1,35 @@
+.principal a {
+    color: white;
+    font-size: 25px;
+}
+.naranja:hover{
+    color: orange;
+}
+.header{
+    background: rgba(128, 128, 128, 0.603);
+}
+header{
+    background: url(/web2020/randymxd06/images/FONDO.jpg);
+}
+.index{
+    background: url(/web2020/randymxd06/images/FONDO.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.registrarse:hover{
+    background: orange;
+    color: white;
+}
+.fondoregistro{
+    background: url(/web2020/randymxd06/images/fondo\ de\ registro\ y\ inicio\ de\ sesion.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.menuimage{
+    background: url(/web2020/randymxd06/images/menuimagen.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.barradebusqueda{
+    background:rgba(128, 128, 128, 0.192);
+}

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <!--Bootstrap y su CDN-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/web2020/Instagram/css/bootstrap.min.css">
+    <!--FontAwesome y su CDN-->
+    <link rel="stylesheet" href="/web2020/Proyecto de Vida/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--Animate y su CDN-->
+    <link rel="stylesheet" href="/web2020/randymxd06/css/animate.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <!--Mis Hoja de Estilos-->
+    <link rel="stylesheet" href="/web2020/randymxd06/css/estilos.css">
+    <link rel="shortcut icon" href="/web2020/randymxd06/favicons/Sign_Up-512.png" type="image/x-icon">
+
+</head>
+
+<body class="fondoregistro">
+    
+    <header class="principal container-fluid ">
+
+        <nav class="header">
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="index.html" style="text-decoration: none;">
+                        <img class="w-25 rounded-circle"
+                            src="/web2020/randymxd06/images/Restaurant-logos-creative-design-vector-08.jpg"
+                            alt="logo image">
+                    </a>
+                    <a class="lead" style="font-size: 35px; text-decoration: none; color: white;"
+                        href="index.html">Randy's Restaurant</a>
+                </div>
+                <div class="col-md-8 text-right" style="margin-top: 30px;">
+                    <a style="font-size: 30px;" class="btn naranja tada animated delay-1s" href="iniciar_sesion.html"><i
+                            class="fa fa-sign-in" aria-hidden="true"></i> Iniciar Sesion</a>
+                    <a style="font-size: 30px;" class="btn naranja tada animated  " href="registrarse.html"><i
+                            class="fa fa-user-plus" aria-hidden="true"></i> Registrarse</a>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="nav-pills bg-secondary">
+            <div class="row">
+                <div class="col-md btn btn-secondary"><a class="nav-link heartBeat animated delay-2s fast"
+                        href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Inicio</a></div>
+                <div class="col-md btn btn-secondary"><a class="nav-link heartBeat animated delay-3s fast" href="sobre_nosotros.html"><i
+                            class="fa fa-users" aria-hidden="true"></i> Sobre Nosotros</a></div>
+                <div class="col-md btn btn-secondary"><a class="nav-link heartBeat animated delay-4s fast" href="menu.html"><i
+                            class="fa fa-cutlery" aria-hidden="true"></i> Menu</a></div>
+                <div class="col-md btn btn-secondary"><a class="nav-link heartBeat animated delay-5s fast" href="galeria.html"><i
+                            class="fa fa-picture-o" aria-hidden="true"></i> Galería</a></div>
+                <div class="col-md btn btn-secondary"><a class="nav-link pulse animated delay-6s infinite" href="contacto.html"><i
+                            class="fa fa-phone" aria-hidden="true"></i> Contactanos</a></div>
+            </div>
+        </nav>
+
+    </header>
+
+    <section class="container form-control mt-2 zoomIn animated" style="height: 608px; width: 800px; background: rgba(128, 128, 128, 0.795); color: white;">
+
+        <h2 class="mb-3 zoomIn animated">Registrate</h2>
+
+        <div class="row zoomIn animated">
+            <div class="col">
+                <label class="lead" for="nombre">Nombre:</label>
+                <input class="form-control" type="text" name="nombre" id="nombre" placeholder="Nombre">
+            </div>
+            <div class="col">
+                <label class="lead" for="apellido">Apellido:</label>
+                <input class="form-control" type="text" name="apellido" id="apellido" placeholder="Apellido">
+            </div>
+        </div>
+
+        <div class="row mt-2 zoomIn animated">
+            <div class="col">
+                <label class="lead" for="correo">Correo</label>
+                <input class="form-control" type="email" name="correo" id="correo" placeholder="Correo Electronico">
+            </div>
+        </div>
+
+        <div class="row mt-2 zoomIn animated">
+            <div class="col">
+                <label class="lead" for="telefono">Telefono</label>
+                <input class="form-control" type="tel" name="telefono" id="telefono" placeholder="Numero de Telefono">
+            </div>
+            <div class="col" style="font-size: 18px;">
+                <label class="d-flex lead" for="sexo">Sexo</label>
+                <label for="sexo"><input type="radio" name="sexo"> Hombre</label>
+                <label for="sexo"><input class="ml-4" type="radio" name="sexo"> Mujer</label>
+            </div>
+        </div>
+
+        <div class="row mt-3 zoomIn animated">
+            <div class="col">
+                <label class="lead" for="contraseña">Contraseña</label>
+                <input class="form-control" type="password" name="contraseña" id="contraseña" placeholder="Contraseña">
+            </div>
+            <div class="col">
+                <label class="lead" for="confirmar">Confirmar Contraseña</label>
+                <input class="form-control" type="password" name="confirmar" id="confirmar"
+                    placeholder="Confirmar Contraseña">
+            </div>
+        </div>
+
+        <div class="row mt-2 zoomIn animated">
+            <div class="col">
+                <span class="lead">Recordar Contraseña</span>
+                <input class="mr-2" type="checkbox" name="recordarme" id="Recordarme">
+            </div>
+        </div>
+
+        <div class="row mt-4 zoomIn animated">
+            <input class="btn btn-light w-25 registrarse flash animated delay-7s slow" style="margin-left: 15px;" type="submit" value="Registrarse">
+        </div>
+
+        <div class="row container mt-2">
+            <div class="col-5">
+                <hr class="zoomIn animated">
+            </div>
+            <div class="col-2 text-center zoomIn animated">o</div>
+            <div class="col-5">
+                <hr class="zoomIn animated">
+            </div>
+        </div>
+
+        <div class="row container mt-3 zoomIn animated">
+            <a style="margin-left: 15px;" href="https://accounts.google.com/ServiceLogin/identifier?hl=es&passive=true&continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Diniciar%2Bsesion%2Ben%2Bgoogle%255C%26oq%3Diniciar%2Bsesion%2Ben%2Bgoogle%255C%26aqs%3Dchrome..69i57j0l4j69i60l3.2013j0j7%26sourceid%3Dchrome%26ie%3DUTF-8&flowName=GlifWebSignIn&flowEntry=AddSession">
+                <img src="//www.000webhost.com/static/default.000webhost.com/images/cpanel-login-v2/google-social-new.svg"
+                alt="google imagen">
+            </a>
+            <a class="btn btn-primary"
+                href="https://accounts.google.com/ServiceLogin/identifier?hl=es&passive=true&continue=https%3A%2F%2Fwww.google.com%2Fsearch%3Fq%3Diniciar%2Bsesion%2Ben%2Bgoogle%255C%26oq%3Diniciar%2Bsesion%2Ben%2Bgoogle%255C%26aqs%3Dchrome..69i57j0l4j69i60l3.2013j0j7%26sourceid%3Dchrome%26ie%3DUTF-8&flowName=GlifWebSignIn&flowEntry=AddSession">
+                <p class="flash animated delay-9s" style="height: 9px; font-size: 19px;">Inicia Sesion con Google</p>
+            </a>
+
+            <a style="margin-left: 144px;" href="https://www.facebook.com/login.php?skip_api_login=1&api_key=1705914966164020&kid_directed_site=0&app_id=1705914966164020&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fresponse_type%3Dcode%26client_id%3D1705914966164020%26redirect_uri%3Dhttps%253A%252F%252Fwww.000webhost.com%252Fcpanel-login%252Foauth%252Ffacebook%26scope%3Demail%252C%2Bpublic_profile%26state%3DHA-86C923ESVZXTNRWIFDOY57QLJBA1U4MPH0KG%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Db88d56f0-8287-49cf-942b-06d64c85b943&cancel_url=https%3A%2F%2Fwww.000webhost.com%2Fcpanel-login%2Foauth%2Ffacebook%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DHA-86C923ESVZXTNRWIFDOY57QLJBA1U4MPH0KG%23_%3D_&display=page&locale=es_LA&pl_dbl=0">
+                <img src="//www.000webhost.com/static/default.000webhost.com/images/cpanel-login-v2/facebook-social-new.svg"
+                alt="facebook imagen">
+            </a>
+            <a class="btn btn-secondary"
+                href="https://www.facebook.com/login.php?skip_api_login=1&api_key=1705914966164020&kid_directed_site=0&app_id=1705914966164020&signed_next=1&next=https%3A%2F%2Fwww.facebook.com%2Fdialog%2Foauth%3Fresponse_type%3Dcode%26client_id%3D1705914966164020%26redirect_uri%3Dhttps%253A%252F%252Fwww.000webhost.com%252Fcpanel-login%252Foauth%252Ffacebook%26scope%3Demail%252C%2Bpublic_profile%26state%3DHA-86C923ESVZXTNRWIFDOY57QLJBA1U4MPH0KG%26ret%3Dlogin%26fbapp_pres%3D0%26logger_id%3Db88d56f0-8287-49cf-942b-06d64c85b943&cancel_url=https%3A%2F%2Fwww.000webhost.com%2Fcpanel-login%2Foauth%2Ffacebook%3Ferror%3Daccess_denied%26error_code%3D200%26error_description%3DPermissions%2Berror%26error_reason%3Duser_denied%26state%3DHA-86C923ESVZXTNRWIFDOY57QLJBA1U4MPH0KG%23_%3D_&display=page&locale=es_LA&pl_dbl=0">
+                <p class="flash animated delay-10s" style="height: 9px; font-size: 19px;">Inicia Sesion con Facebook</p>
+            </a>
+        </div>
+
+    </section>
+    
+</body>
+
+</html>

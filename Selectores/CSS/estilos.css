@@ -1,0 +1,19 @@
+h1{
+    margin: 0;
+    padding: 0;
+}
+div{
+    font-size: 30px;
+}
+section{
+    background: black;
+    color: white;x
+}
+input{
+    color: black;
+    font-size: 100px;
+    width: 100%;
+}
+input:hover{
+    background:aqua;
+}

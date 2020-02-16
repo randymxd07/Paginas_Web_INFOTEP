@@ -7,60 +7,86 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Instagram</title>
     <link rel="stylesheet" href="../Instagram/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../Instagram/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
-    <header> <!--Este es el Header-->
+    <header style="padding-top: 20px;"><!--Este es el Header-->
         <nav class="container">
             <div class="row"><!--Esta es la fila-->
 
                 <div class="col-xl-4 text-left"><!--Este es un contenedor-->
-                    <a href="#">
-                        <img src="../Instagram/images/instagram_icon.png" alt="icon" width="30">
+                    <a href="#" style="text-decoration: none;">
+                        <img src="../Instagram/images/instagram_icon.png" alt="icon" width="25"style="text-decoration: none;">
                         <span>|</span>
-                        <img src="../Instagram/images/instagram_logo.png" alt="logo" height="40">
+                        <img src="../Instagram/images/instagram_logo.png" alt="logo" height="40" style="text-decoration: none;">
                     </a>
                 </div><!--Fin del contenedor-->
 
-                <div class="col-xl-4 text-center"><!--Este es un contenedor-->
-                    <input type="search" class="form-control">
+                <div class="col-xl-4 text-center" style="padding-left: 40px;"><!--Este es un contenedor-->
+                    <input type="search" class="form-control bg-light" placeholder="buscar" 
+                    style="text-align: center; width: 300px;">
                 </div><!--Fin del contenedor-->
 
                 <div class="col-xl-4 text-right"><!--Este es un contenedor-->
-                    <a href="#" ><i class="fa fa-compass"></i></a>
-                    <a href="#"><i class="fa fa-heart"></i></a>
-                    <a href="#"><i class="fa fa-user"></i></a>
+                    <a href="#" style="padding-right: 10px;"><i class="fa fa-compass fa-2x"style="color: black;"></i></a>
+                    <a href="#" style="padding-right: 10px;"><i class="fa fa-heart fa-2x" style="color: black;"></i></a>
+                    <a href="#"><i class="fa fa-user fa-2x" style="color: black;"></i></a>
                 </div><!--Fin del contenedor-->
 
             </div><!--Fin de la fila-->
         </nav>
-    </header> <!--Fin del Header-->
-
-    <section><!--Este es un Section-->
-        <div class="container">
+    </header><!--Fin del Header-->
+    <hr>
+    <section class="container"><!--Este es un Section-->
+        <div class="container" style="padding-top: 20px;">
             <div class="row">
-                <div class="col-xl-4 bg-danger">Profile picture</div>
-                <div class="col-xl-8 bg-secondary">Info</div>
+                <div class="col-xl-4 text-center style="padding-top: 0px;">
+                    <img class="w-50 rounded-circle" src="/web2020/Instagram/images/mi foto.JPG" alt="Profile picture" width=180px ">
+                </div>
+                <div class="col-xl-8">
+                    <div class="container">
+                        <div class="row mb-4">
+                            <small class="lead" style="font-size: 30px; padding-right: 20px; padding-left: 15px;">randymxd06</small>
+                            <div style="padding-top: 5px;">
+                                <input class="form-control btn btn-outline-secondary" style="padding-right: 20px;" type="submit" value="Editar Perfil">
+                            </div>
+                            <a href="" style="color: black;"><i style="padding-left: 10px; padding-top: 8px;" class="fa fa-cog fa-2x" aria-hidden="true"></i></a>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-md-3"><p><b>61</b> Publicaciones</p></div>
+                            <div class="col-md-3"><p><b>152</b> Seguidores</p></div>
+                            <div class="col-md-3"><p><b>95</b> Seguidos</p></div>
+                        </div>
+                        <div class="row mb-2">
+                            <div class="col-md-12">
+                                <p class="text-muted"><b>Randy Martinez Cepeda</b></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section><!--Fin del Section-->
 
     <aside><!--Este es un Aside-->
-        <div class="container">
+        <div class="container mt-5">
             Stories
         </div>
     </aside><!--Fin del Aside-->
 
-    <div><!--Aqui va un contenedor-->
-        <div class="container">
-            <div class="row">
-                <img src="" alt="Image" class="col-xl-4">
-                <img src="" alt="Image" class="col-xl-4">
-                <img src="" alt="Image" class="col-xl-4">
+    <div class="container mt-5"><!--Aqui va un contenedor-->
+        <aside class="d-flex">
+            <div class="mr-2 text-center">
+                <img style="width: 100px; border-radius: 1000px;" src="/web2020/Instagram/images/loved.jpg" alt="image">
+                <p>1</p>
             </div>
-        </div>
+            <div class="text-center">
+                <img style="width: 100px; border-radius: 1000px;" src="/web2020/Instagram/images/brown.jpg" alt="image">
+                <p>2</p>
+            </div>
+        </aside>
     </div><!--Fin del contenedor-->
 
 </body>
