@@ -17,10 +17,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <!--Mis Hoja de Estilos-->
     <link rel="stylesheet" href="../randymxd06/css/estilos.css">
+    <link rel="shortcut icon" href="../randymxd06/favicons/contactus.png" type="image/x-icon">
 
 </head>
 
-<body>
+<body class="contactus">
 
     <header class="principal container-fluid">
 
@@ -28,7 +29,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <a href="index.html" style="text-decoration: none;">
-                        <img class="w-25 rounded-circle" src="../randymxd06/images/randy logo.png" alt="logo image">
+                        <img class="w-25 rounded-circle" src="../randymxd06/images/randylogo.png" alt="logo image">
                     </a>
                     <a class="lead" style="font-size: 35px; text-decoration: none; color: white;" href="index.html">Randy's Recipes</a>
                 </div>
@@ -50,6 +51,31 @@
         </nav>  
 
     </header>
+
+    <main class="container form-control mt-2 zoomIn animated" style="height: 740px; width: 600px; background: rgba(128, 128, 128, 0.795); color: white;">
+        <h2 class="mb-3 zoomIn animated">Contactanos</h2>
+        <label class="lead zoomIn animated" for="nom">Nombre de Contacto</label>
+        <input class="form-control zoomIn animated" maxlength="20" type="text" name="nom" id="nom" placeholder="Escribe tu Nombre de Contacto">
+        <label class="lead mt-3 zoomIn animated" for="correo">Correo Electronico</label>
+        <input class="form-control zoomIn animated" maxlength="100" type="email" name="correo" id="correo" placeholder="Escriba su Correo Electronico">
+        <label class="lead mt-3 zoomIn animated" for="tel">Telefono</label>
+        <input class="form-control zoomIn animated" maxlength="20" type="tel" name="tel" id="tel" placeholder="Escriba su Telefono">
+        <div class="row mt-3 zoomIn animated">
+            <div class="col">
+                <label class="lead" for="tiempo">Mejor Tiempo para Llamar</label>
+                <input class="form-control w-100" type="text" name="tiempo" id="tiempo">
+            </div>
+            <div class="col">
+                <label class="lead" for="cp">Codigo Postal</label>
+                <input class="form-control" maxlength="5" type="text" name="cp" id="cp" placeholder="Escriba su Codigo Postal">
+            </div>
+        </div>
+        <label class="lead mt-3 zoomIn animated" for="tema">Tema</label>
+        <input class="form-control zoomIn animated" maxlength="100" type="text" name="tema" id="tema">
+        <label class="lead zoomIn animated" for="des">Descripcion</label>
+        <textarea class="form-control zoomIn animated" name="des" id="des" cols="10" rows="5"></textarea>
+        <input class="form-control zoomIn animated btn btn-secondary naranja mt-3" type="submit" value="Enviar">
+    </main>
     
 </body>
 </html>

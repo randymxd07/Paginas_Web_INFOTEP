@@ -31,5 +31,16 @@ header{
     background-size: cover;
 }
 .barradebusqueda{
-    background:rgba(128, 128, 128, 0.192);
+    background:rgba(128, 128, 128, 0.418);
+}
+.fondoblanco{
+    background: url(../images//shrimp-dish-3434523.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contactus{
+    background: url(../images/contactus.png);
+    background: url(https://cdn.oneunited.com/core/content/uploads/2016/05/Contact-Us-Page-Hero-BG-1024x614.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
