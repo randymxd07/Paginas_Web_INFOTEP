@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es"><!--La página esta en español-->
 
-<head>
+<head><!--Este es el head de la página-->
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,48 +15,69 @@
     <!--Animate y su CDN-->
     <link rel="stylesheet" href="../randymxd06/css/animate.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
-    <!--Mis Hoja de Estilos-->
+    <!--Mis Hoja de Estilos y Favicons-->
     <link rel="stylesheet" href="../randymxd06/css/estilos.css">
     <link rel="shortcut icon" href="../randymxd06/favicons/kisspng-website-house-home-world-wide-web-computer-icons-house-clip-art-5ab036bba83177.0613905215214977876889.jpg" type="image/x-icon">
     <link rel="shortcut icon" href="https://image.shutterstock.com/image-vector/home-icon-260nw-160210421.jpg" type="image/x-icon">
 
-</head>
+</head><!--Este es el final del head-->
 
-<body class="index">
+<body class="index"><!--Este es el body de la pagina-->
+<!--la clase index aplica un fondo de pantalla, no repetido que cubre el body completo-->
 
-    <header class="principal container-fluid">
+    <header class="principal container-fluid"><!--Este es el header de la pagina-->
+    <!--La clase principal aplica un color blanco a las letras y un tamaño de 25 pixeles-->
 
-        <nav class="header">
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="index.html" style="text-decoration: none;">
+        <nav class="header"><!--Este es un nav-->
+        <!--La clase header aplica un fondo gris transparente-->
+        
+            <div class="row"><!--Este es un div con una clase row-->
+                <!--Dentro hay dos columnas de 4 y 8 que contiene el logo, 
+                nombre y los enlaces a los formularios para registrarse y iniciar sesion-->
+
+                <div class="col-sm-12 col-md-4"><!--Esta es la primera columna-->
+                    <a href="index.html" style="text-decoration: none;"><!--Esta etiqueta de enlace contiene el logo de la pagina y el nombre-->
                         <img class="w-25 rounded-circle" src="../randymxd06/images/randylogo.png" alt="logo image">
                     </a>
                     <a class="lead" style="font-size: 35px; text-decoration: none; color: white;" href="index.html">Randy's Recipes</a>
-                </div>
-                <div class="col-md-8 text-right" style="margin-top: 30px;">
-                    <a style="font-size: 30px;" class="btn naranja tada animated delay-3s" href="iniciar_sesion.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Iniciar Sesion</a>
-                    <a style="font-size: 30px;" class="btn naranja tada animated delay-4s" href="registrarse.html"><i class="fa fa-user-plus" aria-hidden="true"></i> Registrarse</a>
-                </div>
-            </div>
-        </nav>
+                </div><!--Fin de la columna-->
 
-        <nav class="nav-pills bg-secondary">
-            <div class="row">
+                <div class="col-sm-12 col-md-8 text-right" style="margin-top: 30px;"><!--Esta es la segunda columna, este contenedor tiene dos enlaces que te llevan al formulario de iniciar sesion y de registrase-->
+                    <a style="font-size: 30px;" class="btn naranja tada animated delay-3s" href="iniciar_sesion.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Iniciar Sesión</a>
+                    <a style="font-size: 30px;" class="btn naranja tada animated delay-4s" href="registrarse.html"><i class="fa fa-user-plus" aria-hidden="true"></i> Registrarse</a>
+                </div><!--Fin de la columna-->
+
+            </div><!--Fin de la fila-->
+
+        </nav><!--Este es el final del nav-->
+
+        <nav class="nav-pills bg-secondary"><!--Esta es una etiqueta nav-->
+
+            <div class="row"><!--Esta es una fila que contiene varias columnas con enlaces a diferentes paginas-->
                 <div class="col-md btn btn-secondary active"><a class="nav-link heartBeat animated delay-5s fast" href="index.html"><i class="fa fa-home" aria-hidden="true"></i> Inicio</a></div>
                 <div class="col-md btn btn-secondary"><a class="nav-link heartBeat animated delay-6s fast" href="sobre_nosotros.html"><i class="fa fa-users" aria-hidden="true"></i> Sobre Nosotros</a></div>
                 <div class="col-md btn btn-secondary"><a class="nav-link heartBeat animated delay-7s fast" href="menu.html"><i class="fa fa-cutlery" aria-hidden="true"></i> Recetas</a></div>
                 <div class="col-md btn btn-secondary"><a class="nav-link heartBeat animated delay-8s fast" href="galeria.html"><i class="fa fa-picture-o" aria-hidden="true"></i> Galería</a></div>
                 <div class="col-md btn btn-secondary"><a class="nav-link pulse animated delay-9s infinite" href="contacto.html"><i class="fa fa-phone" aria-hidden="true"></i> Contactanos</a></div>
-            </div>
-        </nav>  
+            </div><!--Fin de la fila-->
 
-    </header>
+        </nav><!--Este es el final del nav-->
 
-    <section class="header" style="color: white; font-family: serif">
-        <h5 class="text-center jackInTheBox animated" style="font-size: 90px; margin-top: 170px;">“Una receta no tiene alma. Es el cocinero quien debe darle alma a la receta.”</h5>
-    </section>
+    </header><!--Este es el final del header-->
 
-</body>
+    <div class="header" style="color: white; font-family: serif"><!--Este es un div-->
+        <!--Este div contiene la clase header que aplica un fondo gris transparente, este 
+        div contiene un h5 con una frase que esta centrada y tiene una animacion un
+        tamaño de 50px y tiene un margen hacia arriba de 170 para no pegarlo con la parte del
+        header y que quede centrada en la página-->
+        <p class="text-center zoomIn animated" style="font-size: 60px; margin-top: 170px;">“Una receta no tiene alma.</p>
+        <p class="text-center zoomIn animated" style="font-size: 60px;">Es el cocinero quien debe darle alma a la receta.”</p>
+        
+    </div><!--Este es el final del div-->
 
-</html>
+    <audio autoplay src="../randymxd06/music/Tobu&Itro-Sunburst.mp3"></audio>
+    <!--Este es un audio con la canción de la pagina de inicio-->
+
+</body><!--Este es el fin del body-->
+
+</html><!--Este es el fin de la página-->

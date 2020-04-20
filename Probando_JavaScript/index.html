@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de adivinanza</title>
+</head>
+
+<body>
+
+    <script>
+
+        alert("jUEGO DE ADIVINANZA!!!");
+        alert("Este juego fue creado por Randy R. Martinez con el proposito de hacer perder tiempo a las personas :v");
+        alert("Este juego consiste en adivinar un numero que se genera aleatoriamente entre un rango ya sea 0 y 10 ó 0 y 100, etc... espero que logren adivinar los números, en el menor número de intentos posibles :D")
+        let opc;
+        
+        do {
+            if (opc <= 0) {
+                alert("Error, no puede digitar numeros negativos o cero");
+            }
+            else if(opc>7){
+                alert("Solo puede elegir una de las 7 opciones anteriores");
+            }
+            opc = prompt("Elija el nivel de dificultad que usted desee: \n\n1-Super Facil \n2-Facil \n3-Intermedio \n4-Dificil \n5-Hardcore \n6-Imposible \n7-GodLike");
+        } while (opc<=0 || opc>7);
+
+        if (opc == 1) {
+            alert("Usted ha entrado al modo Super Facil :v");
+            alert("Este modo consiste en adivinar el número en un rango entre 0 y 10");
+            alert("No podrá digitar números fuera de ese rango\nejemplo: -1,-2,-3 ó 11,12,13");
+            alert("presiona enter o dale click en aceptar para comenzar el juego");
+            superfacil();
+        }
+        else if (opc == 2) {
+            alert("Usted ha entrado al modo Facil :3");
+            alert("Este modo consiste en adivinar el número en un rango entre 0 y 100");
+            alert("No podrá digitar números fuera de ese rango\nejemplo: -1,-2,-3 ó 101,102,103");
+            alert("presiona enter o dale click en aceptar para comenzar el juego");
+            facil();
+        }
+        else if (opc == 3) {
+            alert("Usted ha entrado al modo Intermedio :D");
+            alert("Este modo consiste en adivinar el número en un rango entre 0 y 1000");
+            alert("No podrá digitar números fuera de ese rango\nejemplo: -1,-2,-3 ó 1,001 1,002 1,003");
+            alert("presiona enter o dale click en aceptar para comenzar el juego");
+            intermedio();
+        }
+        else if (opc == 4) {
+            alert("Usted ha entrado al modo Dificil :)");
+            alert("Este modo consiste en adivinar el número en un rango entre 0 y 10,000");
+            alert("No podrá digitar números fuera de ese rango\nejemplo: -1,-2,-3 ó 10,001 10,002 10,003");
+            alert("presiona enter o dale click en aceptar para comenzar el juego");
+            dificil();
+        }
+        else if (opc == 5) {
+            alert("Usted ha entrado al modo Hardcore :(");
+            alert("Este modo consiste en adivinar el número en un rango entre 0 y 100,000");
+            alert("No podrá digitar números fuera de ese rango\nejemplo: -1,-2,-3 ó 100,001 100,002 100,003");
+            alert("presiona enter o dale click en aceptar para comenzar el juego");
+            hardcore();
+        }
+        else if (opc == 6) {
+            alert("Usted ha entrado al modo Imposible :'v");
+            alert("Este modo consiste en adivinar el número en un rango entre 0 y 1,000,000");
+            alert("No podrá digitar números fuera de ese rango\nejemplo: -1,-2,-3 ó 1,000,001 1,000,002 1,000,003");
+            alert("presiona enter o dale click en aceptar para comenzar el juego");
+            imposible();
+        }
+        else if (opc == 7) {
+            alert("Usted ha entrado al modo GodLike O_O");
+            alert("Este modo consiste en adivinar el número en un rango entre 0 y 100,000,000");
+            alert("No podrá digitar números fuera de ese rango, ejemplo: -1,-2,-3 ó 100,000,001 100,000,002 100,000,003");
+            alert("presiona enter o dale click en aceptar para comenzar el juego");
+            godlike();
+        }
+
+        function superfacil() {
+
+            const rand = Math.round(Math.random() * 10);
+            let cont = 0;
+
+            do {
+
+                let n;
+
+                do {
+                    if (n < 0) {
+                        alert("Error, no se pueden digitar números negativos");
+                    }
+                    else if (n > 10) {
+                        alert("Error, no se pueden digitar números mayores a 10");
+                    }
+                    n = prompt("Digite un numero entre 0 y 10:");
+                } while (n < 0 || n > 10);
+
+                do {
+                    if (n > rand) {
+                        alert("Digite un número más pequeño");
+                    }
+                    else if (n < rand) {
+                        alert("Digite un número más grande");
+                    }
+                    cont++;
+                    n = prompt("Digite un número entre 0 y 10:");
+                } while (n != rand);
+                alert("Numero de intentos: "+cont);
+            } while (n != rand);
+            
+        }
+
+        function facil() {
+
+            const rand = Math.round(Math.random() * 100);
+            let cont = 0;
+            do {
+
+                let n;
+
+                do {
+                    if (n < 0) {
+                        alert("Error, no se pueden digitar números negativos");
+                    }
+                    else if (n > 100) {
+                        alert("Error, no se pueden digitar números mayores a 100");
+                    }
+                    n = prompt("Digite un numero entre 0 y 100:");
+                } while (n < 0 || n > 100);
+
+                do {
+                    if (n > rand) {
+                        alert("Digite un número más pequeño");
+                    }
+                    else if (n < rand) {
+                        alert("Digite un número más grande");
+                    }
+                    cont++;
+                    n = prompt("Digite un número entre 0 y 100:");
+                } while (n != rand);
+                alert("Numero de intentos: "+cont);
+            } while (n != rand);
+
+        }
+
+        function intermedio() {
+
+            const rand = Math.round(Math.random() * 1000);
+            let cont = 0;
+
+            do {
+
+                let n;
+
+                do {
+                    if (n < 0) {
+                        alert("Error, no se pueden digitar números negativos");
+                    }
+                    else if (n > 1000) {
+                        alert("Error, no se pueden digitar números mayores a 1000");
+                    }
+                    n = prompt("Digite un numero entre 0 y 1000:");
+                } while (n < 0 || n > 1000);
+
+                do {
+                    if (n > rand) {
+                        alert("Digite un número más pequeño");
+                    }
+                    else if (n < rand) {
+                        alert("Digite un número más grande");
+                    }
+                    cont++;
+                    n = prompt("Digite un número entre 0 y 1000:");
+                } while (n != rand);
+                alert("Numero de intentos: "+cont);
+            } while (n != rand);
+
+        }
+
+        function dificil() {
+
+            const rand = Math.round(Math.random() * 10000);
+            let cont = 0;
+            do {
+
+                let n
+
+                do {
+                    if (n < 0) {
+                        alert("Error, no se pueden digitar números negativos");
+                    }
+                    else if (n > 10000) {
+                        alert("Error, no se pueden digitar números mayores a 10,000");
+                    }
+                    n = prompt("Digite un numero entre 0 y 10,000:");
+                } while (n < 0 || n > 10000);
+
+                do {
+                    if (n > rand) {
+                        alert("Digite un número más pequeño");
+                    }
+                    else if (n < rand) {
+                        alert("Digite un número más grande");
+                    }
+                    cont++;
+                    n = prompt("Digite un número entre 0 y 10,000:");
+                } while (n != rand);
+                alert("Numero de intentos: "+cont);
+            } while (n != rand);
+
+        }
+
+        function hardcore() {
+
+            const rand = Math.round(Math.random() * 100000);
+            let cont = 0;
+            do {
+
+                let n;
+
+                do {
+                    if (n < 0) {
+                        alert("Error, no se pueden digitar números negativos");
+                    }
+                    else if (n > 100000) {
+                        alert("Error, no se pueden digitar números mayores a 100,000");
+                    }
+                    n = prompt("Digite un numero entre 0 y 100,000:");
+                } while (n < 0 || n > 100000);
+
+                do {
+                    if (n > rand) {
+                        alert("Digite un número más pequeño");
+                    }
+                    else if (n < rand) {
+                        alert("Digite un número más grande");
+                    }
+                    cont++;
+                    n = prompt("Digite un número entre 0 y 100,000:");
+                } while (n != rand);
+                alert("Numero de intentos: "+cont);
+            } while (n != rand);
+
+        }
+
+        function imposible() {
+
+            const rand = Math.round(Math.random() * 1000000);
+            let cont = 0;
+            do {
+
+                let n;
+
+                do {
+                    if (n < 0) {
+                        alert("Error, no se pueden digitar números negativos");
+                    }
+                    else if (n > 1000000) {
+                        alert("Error, no se pueden digitar números mayores a 1,000,000");
+                    }
+                    n = prompt("Digite un numero entre 0 y 1,000,000:");
+                } while (n < 0 || n > 1000000);
+
+                do {
+                    if (n > rand) {
+                        alert("Digite un número más pequeño");
+                    }
+                    else if (n < rand) {
+                        alert("Digite un número más grande");
+                    }
+                    cont++;
+                    n = prompt("Digite un número entre 0 y 1,000,000:");
+                } while (n != rand);
+                alert("Numero de intentos: "+cont);
+            } while (n != rand);
+
+        }
+
+        function godlike() {
+
+            const rand = Math.round(Math.random() * 100000000);
+            let cont = 0;
+            do {
+
+                let n;
+
+                do {
+                    if (n < 0) {
+                        alert("Error, no se pueden digitar números negativos");
+                    }
+                    else if (n > 100000000) {
+                        alert("Error, no se pueden digitar números mayores a 100,000,000");
+                    }
+                    n = prompt("Digite un numero entre 0 y 100,000,000:");
+                } while (n < 0 || n > 100000000);
+
+                do {
+                    if (n > rand) {
+                        alert("Digite un número más pequeño");
+                    }
+                    else if (n < rand) {
+                        alert("Digite un número más grande");
+                    }
+                    cont++;
+                    n = prompt("Digite un número entre 0 y 100,000,000:");
+                } while (n != rand);
+                alert("Numero de intentos: "+cont);
+            } while (n != rand);
+
+        }
+
+    </script>
+
+    <h1>Lo adivinaste!!!</h1>
+
+</body>
+
+</html>

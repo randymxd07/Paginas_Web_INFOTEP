@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu</title>
+    <title>Recetas</title>
     <!--Bootstrap y su CDN-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="../randymxd06/css/bootstrap.min.css">
@@ -17,12 +17,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
     <!--Mis Hoja de Estilos-->
     <link rel="stylesheet" href="../randymxd06/css/estilos.css">
+    <link rel="shortcut icon" href="../randymxd06/favicons/comidafavicon.jpg" type="image/x-icon">
 
 </head>
 
 <body class="menuimage">
 
-    <header class="principal container-fluid">
+    <header class="principal container-fluid"><!--El mismo header de las otras paginas-->
 
         <nav class="header">
             <div class="row">
@@ -33,7 +34,7 @@
                     <a class="lead" style="font-size: 35px; text-decoration: none; color: white;" href="index.html">Randy's Recipes</a>
                 </div>
                 <div class="col-md-8 text-right" style="margin-top: 30px;">
-                    <a style="font-size: 30px;" class="btn naranja tada animated delay-3s" href="iniciar_sesion.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Iniciar Sesion</a>
+                    <a style="font-size: 30px;" class="btn naranja tada animated delay-3s" href="iniciar_sesion.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Iniciar Sesión</a>
                     <a style="font-size: 30px;" class="btn naranja tada animated delay-4s" href="registrarse.html"><i class="fa fa-user-plus" aria-hidden="true"></i> Registrarse</a>
                 </div>
             </div>
@@ -49,48 +50,55 @@
             </div>
         </nav>  
 
-    </header>
+    </header><!--Fin del header-->
     
     <div class="container-fluid form-control mt-2 zoomIn animated" style="background: rgba(128, 128, 128, 0.795); color: white; height: 840px; width: 1250px;">
-        
+    <!--Este div contiene unas filas con un review de las recetas-->
         <h2 class="text-center zoomIn animated"><i class="fa fa-cutlery" aria-hidden="true"></i> Recetas</h2>
 
-        <div class="row mt-3 container zoomIn animated" style="margin-left: 40px; background: rgba(128, 128, 128, 0.795); color: white; width: 1140px; height: 225px;">
+        <div class="row mt-3 zoomIn animated" style="margin-left: 40px; background: rgba(128, 128, 128, 0.795); color: white; width: 1140px; height: 225px;">
             <div class="col-md-4">
-                <img class="w-100 mt-2" src="../randymxd06/images/churros-1000x617.jpg" alt="image">
+                <a href="../randymxd06/images/churros-1000x617.jpg">
+                    <img class="w-100 mt-2" src="../randymxd06/images/churros-1000x617.jpg" alt="image">
+                </a>
             </div>
             <div class="col-md-8">
                 <span class="lead" style="font-size: 30px;">Churros</span>
                 <p class="lead">Ingredientes: </p>
-                <p> mantequilla, agua, harina de trigo, sal, canela molida, azúcar blanca refinada, huevos</p>  
-                <p class="lead">Tiempo de Preparacion: 1h 30m</p>
-                <a class="form-control naranja btn btn-secondary" href="#">Ver Mas</a>  
+                <p> Mantequilla, Agua, Harina de Trigo, Sal, Canela Molida, Azúcar Blanca Refinada, Huevos</p>  
+                <p class="lead">Tiempo de Preparacion: 45m</p>
+                <a class="form-control naranja btn btn-secondary" href="churros.html">Ver Más</a>  
             </div>
         </div>
 
-        <div class="row mt-3 container zoomIn animated" style="margin-left: 40px; background: rgba(128, 128, 128, 0.795); color: white; width: 1140px; height: 225px;">
+        <div class="row mt-3 zoomIn animated" style="margin-left: 40px; background: rgba(128, 128, 128, 0.795); color: white; width: 1140px; height: 225px;">
             <div class="col-md-4">
-                <img class="w-100 mt-2" src="../randymxd06/images/churros-1000x617.jpg" alt="image">
+                <a href="../randymxd06/images/pastel-de-pure-de-manzana--md-62802p81145.jpg">
+                    <img class="w-100 mt-2" style="height: 210px;" src="../randymxd06/images/pastel-de-pure-de-manzana--md-62802p81145.jpg" alt="image">
+                </a>
             </div>
             <div class="col-md-8">
-                <span class="lead" style="font-size: 30px;">Churros</span>
+                <span class="lead" style="font-size: 30px;">Pastel de Manzana</span>
                 <p class="lead">Ingredientes: </p>
-                <p> mantequilla, agua, harina de trigo, sal, canela molida, azúcar blanca refinada, huevos</p>  
+                <p> Manzanas Rojas, Aceite de Coco, Huevos, Harina de Trigo, Azúcar, Canela Molida, Limón, Azúcar</p>  
                 <p class="lead">Tiempo de Preparacion: 1h 30m</p>
-                <a class="form-control naranja btn btn-secondary" href="#">Ver Mas</a>  
+                <a class="form-control naranja btn btn-secondary" href="pasteldemanzana.html">Ver Más</a>  
             </div>
         </div>
 
-        <div class="row mt-3 container zoomIn animated" style="margin-left: 40px; background: rgba(128, 128, 128, 0.795); color: white; width: 1140px; height: 225px;">
+        <div class="row mt-3 zoomIn animated" style="margin-left: 40px; background: rgba(128, 128, 128, 0.795); color: white; width: 1140px; height: 225px;">
             <div class="col-md-4">
-                <img class="w-100 mt-2" src="../randymxd06/images/churros-1000x617.jpg" alt="image">
+                <a href="../randymxd06/images/coditoconatun.jpg">
+                    <img style="height: 210px;" class="w-100 mt-2" src="../randymxd06/images/coditoconatun.jpg" alt="image">
+                </a>
+                
             </div>
             <div class="col-md-8">
-                <span class="lead" style="font-size: 30px;">Churros</span>
+                <span class="lead" style="font-size: 30px;">Ensalada de Coditos con Atún</span>
                 <p class="lead">Ingredientes: </p>
-                <p> mantequilla, agua, harina de trigo, sal, canela molida, azúcar blanca refinada, huevos</p>  
-                <p class="lead">Tiempo de Preparacion: 1h 30m</p>
-                <a class="form-control naranja btn btn-secondary" href="#">Ver Mas</a>  
+                <p>Codito, Mayonesa, Vinagre, Mostaza, Atún, Vegetales, Sal y Pimienta, Galletas o Lechuga, Chiles</p>  
+                <p class="lead">Tiempo de Preparacion: 35m</p>
+                <a class="form-control naranja btn btn-secondary" href="codito.html">Ver Más</a>  
             </div>
         </div>
 
@@ -100,7 +108,8 @@
             </div>
         </div>
 
-    </div>
+    </div><!--Fin del div-->
 
-</body>
-</html>
+</body><!--Fin del body-->
+
+</html><!--Fin de la pagina-->

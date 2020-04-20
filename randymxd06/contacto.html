@@ -23,7 +23,7 @@
 
 <body class="contactus">
 
-    <header class="principal container-fluid">
+    <header class="principal container-fluid"><!--Mismo header-->
 
         <nav class="header">
             <div class="row">
@@ -34,7 +34,7 @@
                     <a class="lead" style="font-size: 35px; text-decoration: none; color: white;" href="index.html">Randy's Recipes</a>
                 </div>
                 <div class="col-md-8 text-right" style="margin-top: 30px;">
-                    <a style="font-size: 30px;" class="btn naranja tada animated delay-3s" href="iniciar_sesion.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Iniciar Sesion</a>
+                    <a style="font-size: 30px;" class="btn naranja tada animated delay-3s" href="iniciar_sesion.html"><i class="fa fa-sign-in" aria-hidden="true"></i> Iniciar Sesión</a>
                     <a style="font-size: 30px;" class="btn naranja tada animated delay-4s" href="registrarse.html"><i class="fa fa-user-plus" aria-hidden="true"></i> Registrarse</a>
                 </div>
             </div>
@@ -50,16 +50,21 @@
             </div>
         </nav>  
 
-    </header>
+    </header><!--Fin del header-->
 
     <main class="container form-control mt-2 zoomIn animated" style="height: 740px; width: 600px; background: rgba(128, 128, 128, 0.795); color: white;">
+    <!--Este main contiene un formulario para contactar con los dueños de la pagina-->
         <h2 class="mb-3 zoomIn animated">Contactanos</h2>
+
         <label class="lead zoomIn animated" for="nom">Nombre de Contacto</label>
         <input class="form-control zoomIn animated" maxlength="20" type="text" name="nom" id="nom" placeholder="Escribe tu Nombre de Contacto">
+
         <label class="lead mt-3 zoomIn animated" for="correo">Correo Electronico</label>
         <input class="form-control zoomIn animated" maxlength="100" type="email" name="correo" id="correo" placeholder="Escriba su Correo Electronico">
+
         <label class="lead mt-3 zoomIn animated" for="tel">Telefono</label>
         <input class="form-control zoomIn animated" maxlength="20" type="tel" name="tel" id="tel" placeholder="Escriba su Telefono">
+
         <div class="row mt-3 zoomIn animated">
             <div class="col">
                 <label class="lead" for="tiempo">Mejor Tiempo para Llamar</label>
@@ -70,12 +75,16 @@
                 <input class="form-control" maxlength="5" type="text" name="cp" id="cp" placeholder="Escriba su Codigo Postal">
             </div>
         </div>
+
         <label class="lead mt-3 zoomIn animated" for="tema">Tema</label>
         <input class="form-control zoomIn animated" maxlength="100" type="text" name="tema" id="tema">
+
         <label class="lead zoomIn animated" for="des">Descripcion</label>
         <textarea class="form-control zoomIn animated" name="des" id="des" cols="10" rows="5"></textarea>
         <input class="form-control zoomIn animated btn btn-secondary naranja mt-3" type="submit" value="Enviar">
-    </main>
+
+    </main><!--Fin del main-->
     
-</body>
-</html>
+</body><!--Fin del body-->
+
+</html><!--Fin de la pagina-->

@@ -44,3 +44,11 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
 }
+.indice{
+    background: url(../images/colors1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body > div > a > img{
+    display: none;
+}
