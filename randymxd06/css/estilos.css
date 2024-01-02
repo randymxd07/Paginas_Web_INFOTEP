@@ -11,10 +11,15 @@
 header{
     background: url(../images/FONDO.jpg);
 }
-.index{
+.index {
     background: url(../images/FONDO.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    height: 100vh;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
 }
 .registrarse:hover{
     background: orange;
@@ -42,6 +47,11 @@ header{
     background: url(../images/contactus.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+    height: 131vh;
+    margin: 0;
+    align-items: center;
+    justify-content: center;
 }
 .indice{
     background: url(../images/colors1.jpg);
